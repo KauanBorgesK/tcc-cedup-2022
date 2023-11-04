@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Helvetica, sans-serif;
+    color: #323232;
+    border: none;
+}
+.fundo::after{
+    height: 100%;
+    width: 100%;
+    content: "";
+    background: url(./imagens/fundo.jpg);
+    opacity: 0.5;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+    background-size: cover;
+   }
+   body {
+
+    background-color: #3b3535;
+ }
+textarea:focus, input:focus{
+    outline: none;
+}
+a,label{
+    font-size: 0.8rem;
+
+}
+a:hover{
+    color:rgb(65, 162, 167) ;
+}
+#login-container{
+    background-color: rgb(255, 255, 255);
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px 40px ;
+    margin-top: 10vh;
+    border-radius: 10px;
+    text-align: center;
+}
+form{
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+label, input{
+    display:block;
+    width: 100%;
+    text-align: left;
+}
+label{
+    font-weight: bold;
+}
+input{
+    border-bottom:2px solid #323232;
+    padding: 10px;
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+input:focus{
+    border-bottom:2px solid rgb(163, 131, 131);
+}
+#forgot{
+    text-align: right;
+    display: block;
+    font-weight: bold;
+}
+#register-container{
+    text-align: center;
+    display: block; 
+    font-weight: bold; }
+input[type="submit"]{
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: none;
+    height: 40px;
+    border-radius: 20px;
+    margin-top: 30px;
+    background-color: rgb(197, 86, 86);
+    cursor:pointer;
+}
+input[type="submit"]:hover{
+    background-color:rgb(221, 36, 36);
+    transition: 0.5s;
+}
+
+
+
+

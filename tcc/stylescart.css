@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Macondo&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #ffffff;
+  
+  } 
+  h2{
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Macondo', cursive;
+    padding-top: 20px;
+  }
+  .compras{
+    text-align: center;
+  }
+  .tabela{
+    display: block;
+    text-align: center;
+    padding: 8px;
+    font-size: 20px;
+    
+  }
+  .tabela > table{
+    margin-left: auto;
+    margin-right:auto;
+  }
+
+  th, td{
+    padding: 5px;
+  }
+  th{
+    background-color: rgb(138, 93, 93);
+    
+  }
+
+  .cart{
+    float: left;
+    padding-right:5px;
+  }
+  .logicon{
+    float: right;
+    padding-left:8px ;
+  }
+  .logemail{
+    display: inline;
+    font-size: 17px;
+  }
+  
+  .topnav > .log { 
+    margin: 14px 10px auto auto; 
+    margin-left: auto;
+  }
+  
+  .topnav a {
+    color: #ffffff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    transition: 0.3s;
+  
+  }
+  
+  
+  /* Add a black background color to the top navigation */
+  .topnav {
+    position: sticky;
+    background-color: rgb(138, 93, 93);
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    padding: 0 10px;
+    top: 0;
+    z-index: 9997;
+  } 
+    /* Change the color of links on hover */
+  .topnav a:hover {
+    background-color: red;
+    color: rgb(0, 0, 0);
+  }
+  
+  .fundo::after{
+    height: 100%;
+    width: 100%;
+    background-repeat: repeat;
+    content: "";
+    background: url(./imagens/fundo.jpg);
+    opacity: 0.5;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1
+  }  
+    body {
+    position: static;
+    background-color: #3b3535;
+      }
+     

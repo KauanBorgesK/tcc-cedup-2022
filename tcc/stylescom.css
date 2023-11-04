@@ -1,0 +1,306 @@
+@import url('https://fonts.googleapis.com/css2?family=Macondo&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #ffffff;
+ }
+  .modal * {
+    color: #151515;
+
+  }
+
+  .coment  {
+    width: 270px;
+    text-align: right;
+    float: right;
+    padding-top: 25px;
+    padding-bottom: 25px;
+
+}
+  .botao{
+  margin-top: 10px;
+}
+  .botao button{
+  height: 40px;
+  width: 100%;
+  background: rgb(197, 86, 86);;
+  font-size: 17px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.3s;
+}
+  .botao button:hover{
+  background: red;
+}
+  .modal h1{
+    font-size: 25px;
+    text-align: center;
+  }
+
+  .modal p{
+    padding: 40px 10px 10px 20px;
+    text-align: start;
+    font-size: 19px;
+  }
+
+  .modal img{
+    width: 60%;
+    height: 60%;
+    float: left;
+    padding-top: 30px;
+    padding-right: 5px;
+
+  }
+
+  .titulos{
+    font-family: 'Macondo', cursive;
+    min-height: 20vh;
+  }
+
+  .titulos h1{
+    text-align: center;
+    font-size: 65px;
+    padding-top: 40px;
+  }
+
+  .titulos h2{
+    text-align: center;
+    font-size: 35px;
+    color: #ffffff;
+    padding-top: 20px;
+  }
+
+  .compras{ 
+    background-color: #ffffff;
+    border-radius: 10px;
+    display:inline-flex;
+    padding: 10px;
+    margin: 25px;
+    max-width: 645px;
+    height: 200px;
+    min-width: 500px;
+    min-height: 100px;
+    
+  }
+  .compras a{
+    display: contents;
+  }
+  .compras img{
+    width: 100%;
+    height: 100%;
+
+    border-radius: 30px;
+    padding-left: 10px;
+
+  }
+
+  
+  .texto p, strong{
+    text-align:center;
+    color: rgb(0, 0, 0); 
+    padding-bottom: 20px;
+    font-size: 17px;
+    min-width: 500px;
+
+  }
+  
+  .texto strong{
+    font-size: 20px;
+    padding: 30px;
+  }
+
+  .texto h4{
+    text-align: center;
+    color: black;
+    font-size: 25px;
+    padding: 20px;  
+  }
+
+
+  .fundo::after{
+    height: 100%;
+    width: 100%;
+    background-repeat: repeat;
+    content: "";
+    background: url(./imagens/fundo.jpg);
+    opacity: 0.5;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1
+   }
+  
+  body {
+     position: relative;
+     background-color: #3b3535;
+  }
+
+    /* cabeçalho */
+ 
+  .topnav a {
+    color: #ffffff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    transition: 0.3s;
+  
+  }
+  .cart{
+    float: left;
+    padding-right: 10px;
+  }
+  .logicon{
+    float: right;
+    padding-left:8px ;
+  }
+  .logemail{
+    display: inline;
+    font-size: 17px;
+  }
+  .topnav > .log { 
+    margin: 14px 10px auto auto; 
+    margin-left: auto;
+  }
+  
+  /* Add a black background color to the top navigation */
+  .topnav {
+    position: sticky;
+    background-color: rgb(138, 93, 93);
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    padding: 0 10px;
+    top: 0;
+    z-index: 9997;
+  }
+   
+    
+    /* Change the color of links on hover */
+  .topnav a:hover {
+    background-color: red;
+    color: rgb(0, 0, 0);
+  }   
+
+
+
+    /* rodape */ 
+ 
+   footer{
+    width: 100%;
+    background:rgb(108, 79, 79);
+    padding: 15px;
+    font-size: 17px;
+  }
+  .main-content{
+    display: flex;
+  }
+  .main-content .box{
+    flex-basis: 50%;
+    padding: 10px 20px;
+  }
+  .box h2{
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+  .box .content{
+    margin: 20px 0 0 0;
+  }
+  .left .content .social{
+    margin: 20px 0 0 0;
+  }
+  .left .content .social a{
+    padding: 0 2px;
+  }
+  .left .content .social a span{
+    width: 40px;
+    height: 40px;
+    background-color: #1a1a1a;
+    text-align:center;
+    line-height: 40px;
+    border-radius: 5px;
+    font-size: 40px;
+    transition: 0.3s;
+  }
+  .left .content .social a span:hover{
+    background: red;
+  }
+  .left .content p{
+      text-align: justify;
+  }
+  
+  .center .content .text{
+      font-size: 17px;
+      font-weight: 500;
+      padding-left: 10px;
+  }
+  .center .content .phone{
+      margin: 10px 0;
+  }
+  .center .content .msg{
+      margin-top: 10px;
+  }
+  .right form input, .right form textarea{
+      width: 100%;
+      font-size: 17px;
+      background: #151515;
+      padding-left: 10px;
+      border: 1px solid #222222;
+  }
+  .right form input{
+      height: 35px;
+  }
+  .right form input:focus,
+  .right form textarea:focus{
+      outline-color: #3498db;
+  }
+  .right form .text{
+      font-size: 17px;
+      margin-bottom: 2px;
+      color: #ffffff;
+  }
+  .right form .btn{
+      margin-top: 10px;
+  }
+  .right form .btn button{
+      height: 40px;
+      width: 100%;
+      background: rgb(197, 86, 86);;
+      font-size: 17px;
+      font-weight: 500;
+      cursor: pointer;
+      transition: 0.3s;
+  }
+  .right form .btn button:hover{
+      background: red;
+  }
+  .bottom .center{
+      padding: 5px;
+      font-size: 15px;
+      background: #151515;
+      text-align: center;
+  }
+  .bottom .center span{
+      color: #656565;
+  }
+  .bottom .center a{
+      color: #f12020;
+      text-decoration: none;
+  }
+  .bottom .center a:hover{
+      text-decoration: underline;
+  }
+  @media screen and (max-width: 900px){
+    
+      .main-content{
+          flex-wrap: wrap;
+          flex-direction: column;
+      }
+      .main-content .box{
+          margin: 5px 0;
+      }
+  }

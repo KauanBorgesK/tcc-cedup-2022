@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Helvetica, sans-serif;
+    color: #323232;
+    border: none;
+}
+
+input, label{
+    display: block;
+    width: 100%;
+
+}
+input:focus, label:focus{
+    outline: none ;
+}
+.fundo::after{
+    height: 100%;
+    width: 100%;
+    content: "";
+    background: url(./imagens/fundo.jpg);
+    opacity: 0.5;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+    background-size: cover;
+   }
+   body {
+    padding: 80px;
+    background-color: #3b3535;
+ }
+
+#main-container{
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    border-radius: 10px;
+    padding: 25px;
+}
+
+#main-container h1{
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 1.5rem;
+}
+
+form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+.full-box{
+    flex: 1 1 100%;
+    position: relative;
+}
+
+.half-box{
+    flex: 1 1 45%;
+    position: relative;
+}
+
+.space {
+    margin-right:2.5%;
+}
+
+label{
+    font-weight: bold;
+    font-size: .8rem;
+}
+
+input{
+    border-bottom: 2px solid #323232;
+    padding: 10px;
+    font-size: 0.9rem;
+    margin-bottom:40px ;
+}
+
+input:focus{
+    border-color:rgb(163, 131, 131);
+
+}
+#register-container{
+    text-align: center;
+    display: block; 
+    font-weight: bold;
+}
+a:hover{
+    color:rgb(65, 162, 167) ; }
+a{
+    font-weight: normal;
+}
+/*input[type="submit"]{
+    background-color:rgb(197, 86, 86) ;
+    color: black;
+    border: none;
+    border-radius: 20px ;
+    height: 40px;
+    cursor: pointer;
+    font-weight: bold;
+}*/
+ input[type="submit"]{
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: none;
+    height: 40px;
+    border-radius: 20px;
+    background-color: rgb(197, 86, 86);
+    cursor:pointer;
+ }
+input[type="submit"]:hover{
+    background-color:rgb(221, 36, 36) ;
+    transition: 0.5s;
+}
+.error{
+    color: pink;
+    position: absolute;
+    top: 57px;
+    font-size: 0.8rem;
+}
+
+.template{
+    display: none;
+}
